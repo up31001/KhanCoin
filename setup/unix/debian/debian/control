@@ -1,0 +1,17 @@
+Source: KhanCoin
+Section: misc
+Priority: extra
+Maintainer: KhanCoin <akira.takizawa@morningKhanCoin.com>
+Build-Depends: debhelper (>= 5),
+	libminiupnpc-dev,
+	libdb++-dev,
+	libboost-system-dev, libboost-filesystem-dev, libboost-program-options-dev, libboost-thread-dev,
+	qt5-default, qttools5-dev-tools,
+	desktop-file-utils, 
+Standards-Version: 3.8.3
+Homepage: http://www.morningKhanCoin.com/
+
+Package: KhanCoin
+Architecture: i386 amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: KhanCoin Wallet
